@@ -52,6 +52,11 @@ li {
     box-shadow: -10px -10px 20px rgba(229, 245, 254, 0.5);
 }
 
+li.operation {
+    color: white;
+    background: #a8d7f4;
+}
+
 /* Field where output will be displayed */
 #display {
     padding: 20px;
