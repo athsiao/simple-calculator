@@ -4,45 +4,73 @@
   
 html {
     scroll-behavior: smooth;
+    font-family: 'Inter Tight', sans-serif;
 }
   
 [hidden] {
     display: none !important;
 }
 
-/* Nav bar styling */
-ul.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    
+/* Calculator's main body */
+.calculator-body {
+    position: absolute;
+    height: 450px;
+    width: 300px;
+    background: blue;
+    background-image: url('assets/calc-bg.png');
+    border-radius: 20px;
+    box-shadow: 15px 15px 20px rgba(78, 64, 64, 0.1);
+}
+
+/* Pads the area around all of the buttons */
+ul {
+    position: relative;
+    margin: 20px 10px 20px 10px;
+    padding: 0px;
+}
+
+/* Applied to every button */
+li {
+    float: left;
+    position: relative;
     list-style-type: none;
-    margin: 0;
-    padding: 10px;
-    overflow: hidden;
-    background-color: #0C2136;
-}
-
-ul.navbar li {
-    float: right;
-}
-
-ul.navbar li a {
-    display: block;
-    color: white;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #B7E1F7;
+    font-weight: 600;
+    font-size: 15pt;
+    line-height: 30pt;
     text-align: center;
-    margin: 10px 20px;
-    text-decoration: none;
-    transition-duration: 0.3s;
+    color: #67A8C7;
+    background: linear-gradient(160deg, #addaf0, #E0F5FF);
+    box-shadow: 10px 10px 20px #BADDEF;
+    box-shadow: -10px -10px 20px rgba(229, 245, 254, 0.5);
 }
 
-ul.navbar li.register {
+/* Field where output will be displayed */
+#display {
+    padding: 20px;
+    width: 93%;
+    line-height: 20px;
+    text-align: right;
+    font-weight: 600;
+    font-size: 20pt;
+    color: #60A9FF;
     border-radius: 15px;
-    background-color: #123345;
+    border-style: none;
+    text-shadow: 0px 0px 3px #60A9FF;
+    box-shadow: inset 7px 7px 10px #cee7f3;
+    background: linear-gradient(116deg, #F4FDFF 30.5%, #D6F4FB 39.17%);
 }
 
-ul.navbar li a:hover {
-    transform: scale(1.2);
+#equals {
+    width: 120px;
+    color: white;
+    border-style: none;
+    background: linear-gradient(120deg, #79D3FF -3.5%, #60A9FF 103.49%);
 }
