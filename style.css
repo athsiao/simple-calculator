@@ -57,6 +57,11 @@ li.operation {
     background: #a8d7f4;
 }
 
+li.operation.selected {
+    color: #60A9FF;
+    background: white;
+}
+
 /* Field where output will be displayed */
 #display {
     padding: 20px;
